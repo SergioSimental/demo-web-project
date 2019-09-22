@@ -131,5 +131,14 @@ public class WebController {
 		modelAndView.addObject("users", listAllUsers());
 		return modelAndView;
 	}
+	
+		@RequestMapping(value = "/cs480/student", method = RequestMethod.GET)
+	String student() {
+		// You can replace this with other string,
+		// and run the application locally to check your changes
+		// with the URL: http://localhost:8080/
+		return "Student Page";
+	}
+	
 
 }
